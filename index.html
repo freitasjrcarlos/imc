@@ -11,9 +11,11 @@
     <div class="principal">
       <h1>Índice de massa corporal</h1>
       <form name="calcularIMC">
-        <input type="text" id="peso" placeholder="Peso"></input>
-        <input type="text" id="altura" placeholder="Altura"></input>
-        <input type="button" value="calcular" onclick="IMC()" id="calcular">       
+        <div class="container">
+          <input type="text" id="peso" placeholder="Peso"></input>
+          <input type="text" id="altura" placeholder="Altura"></input>
+          <input type="button" value="Calcular" onclick="IMC()" id="calcular">
+        </div>       
       </form>
       <span data-span="resultado"></span>
     </div>
