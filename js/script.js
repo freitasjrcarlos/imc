@@ -3,8 +3,10 @@ function IMC() {
   let alturaInicial = document.calcularIMC.altura.value;
   let span = document.querySelector('[data-span="resultado"]'); 
 
+  //Substituindo vírgula
   altura = alturaInicial.replace(/,/g, ".");
 
+  //Fórmula
   let resultado = peso / (altura * 2);
 
   if(resultado < 18.5){
